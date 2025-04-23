@@ -1,0 +1,49 @@
+.title {
+    text-align: center;
+    margin: 70px 0 30px;
+}
+
+.title h2 {
+    font-size: 36px;
+    color: #000F38;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: relative;
+    display: inline-block;
+}
+
+/* Orange underline */
+.title h2::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 4px;
+    background-color: #FF6200;
+    margin: 10px auto 0;
+    border-radius: 2px;
+    transition: width 0.4s ease;
+}
+
+/* Optional hover animation on underline */
+.title h2:hover::after {
+    width: 80px;
+}
+
+/* Subtitle styling */
+.title p {
+    font-size: 16px;
+    color: #555;
+    margin-top: 10px;
+}
+
+/* Service image/card styling (apply .service-card class to each) */
+.service-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.service-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
